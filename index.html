@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Book Search Engine</h1>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for books...">
+            <input type="text" id="author-input" placeholder="Filter by author...">
+            <select id="language-select">
+                <option value="">Any Language</option>
+                <option value="en">English</option>
+                <option value="es">Spanish</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="zh">Chinese</option>
+                <option value="it">Italian</option>
+                <option value="pt">Portuguese</option>
+                <option value="ar">Arabic</option>
+                <option value="gn">Guarani</option>
+            </select>
+            <select id="category-select">
+                <option value="">Any Category</option>
+                <option value="drama">Drama</option>
+                <option value="fiction">Fiction</option>
+                <option value="history">History</option>
+                <option value="art">Art</option>
+                <option value="horror">Horror</option>
+                <option value="science">Science</option>
+            </select>
+            <button id="search-button">Search</button>
+        </div>
+        <div id="results"></div>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

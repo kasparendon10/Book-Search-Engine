@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+#search-input, #author-input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+#language-select, #category-select {
+    padding: 0.5rem;
+}
+
+#search-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+#results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.result-item {
+    width: 300px;
+    margin-bottom: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.result-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.result-item-content {
+    padding: 1rem;
+}
+
+.result-item h3 {
+    margin-top: 0;
+}
+
+.result-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.result-item .availability {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.result-item a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.result-item a:hover {
+    background-color: #0056b3;
+}
